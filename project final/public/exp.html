@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 350px;
+            height: 350px;
+        }
+        .container video{
+            width: 100%;
+            height: 100%;
+        }
+        .container .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 350px;
+            background: #000;
+            mix-blend-mode: screen;
+            font-size: 10rem;
+            font-family: "Bebas Neue", cursive;
+            letter-spacing: 7px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted>
+            <source src="./Abstract Black Bubbles.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+            <p><a onclick="changetheme()" id="anchortheme" title="change themes">Lynx</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
