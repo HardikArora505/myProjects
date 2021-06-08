@@ -5,58 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dark.css" id="theme">
+    <link rel="stylesheet" href="./light.css" id="theme">
     <link rel="icon" href="./logo.jpg" type="image/gif" sizes="18x18">
     <style>
-        /* .containme {
-            flex-direction: column;
-            word-wrap: break-word;
-            min-height: 100vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          
-            /* perspective: 1000px; */
-
-        /* font-size: 7rem;
-        } */
-        .container {
-            min-height: 100vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            perspective: 1000px;
-            font-size: 7rem;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            transition: all .2s linear;
         }
 
-        .container video {
+        /*form*/
+        .form-container {
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: url("./ink3.jpg") no-repeat; */
+            background-size: cover;
+            background-position: center;
+            perspective: 1000px;
+
+        }
+
+        .form-container form {
+            margin-top: 5%;
+            height: 485px;
+            width: 350px;
+            background: rgba(255, 255, 255, .1);
+            text-align: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            border-left: 1px solid rgba(255, 255, 255, .3);
+            backdrop-filter: blur(10px);
+            transform-style: preserve-3d;
+        }
+
+        /*heading*/
+        .form-container form h3 {
+            font-size: 30px;
+            padding: 30px 0;
+            color: #108161;
+            letter-spacing: 3px;
+        }
+
+        /*icon*/
+        .form-container form i {
+            padding: 0.5px;
+            font-size: 20px;
+            color: #bbb;
+
+        }
+
+        /*Login*/
+        .form-container form input {
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 82%;
+            background: rgba(0, 0, 0, .1);
+            color: rgba(255, 255, 255, .7);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .5) inset;
+            font-size: 17px;
+            padding: 0 10px;
+            margin: 15px 0;
+            letter-spacing: 1px;
+            border-radius: 15px;
+        }
+
+        /*Login*/
+        .form-container form input[type="submit"] {
+            width: 90%;
+            cursor: pointer;
+            background: linear-gradient(90deg, #55057f, #2be2da);
+            margin-top: 30px;
+            border-radius: 50px;
+        }
+
+        .form-container form input[type="submit"]:hover {
+            letter-spacing: 4px;
+        }
+
+        .container {
+            display: block;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        #mySidenav {
+            opacity: 0;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        @media(min-width:992px) {
+            header {
+                height: 85px;
+            }
+        }
+
+        #myVideo {
             position: fixed;
-            z-index: -1;
-            /* right: 0;
-            bottom: 0; */
+            right: 0;
+            bottom: 0;
             min-width: 100%;
             min-height: 100%;
         }
-        #come p{
-            margin-top: 14%;
-            color: #7f27f399;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        @media (max-width: 768px){
-            .container{
-                font-size: 4rem;
-            }
-
-        }
-      
     </style>
+    <title>Document</title>
 </head>
-
 
 <body>
     <header>
@@ -74,13 +144,13 @@
             <div class="item2">
 
                 <ul class="nalla">
-                    <li><a href="./index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
-                    <li><a href="./premium.html" target="_blank" rel="noopener noreferrer">Premium</a></li>
-                    <li><a href="./support.html" target="_blank" rel="noopener noreferrer">Support</a></li>
-                    <li><a href="./download.html" target="_blank" rel="noopener noreferrer">Download</a></li>
-                    <li id="i1"><a href="./signup.html" target="_blank" rel="noopener noreferrer">Sign up</a></li>
+                    <li><a href="./index.html" target="" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="./premium.html" target="" rel="noopener noreferrer">Premium</a></li>
+                    <li><a href="./support.html" target="" rel="noopener noreferrer">Support</a></li>
+                    <li><a href="./download.html" target="" rel="noopener noreferrer">Download</a></li>
+                    <li id="i1"><a href="./signup.html" target="" rel="noopener noreferrer">Sign up</a></li>
                     <li id="i2">|</li>
-                    <li id="i3"><a href="./glasslogin.html" target="_blank" rel="noopener noreferrer">Login</a></li>
+                    <li id="i3"><a href="./glasslogin.html" target="" rel="noopener noreferrer">Login</a></li>
 
                 </ul>
             </div>
@@ -121,20 +191,32 @@
         </div>
 
     </header>
-
-    <div class="container">
-        <video autoplay loop muted>
-            <source src="./Tum Hi Aana Video  Marjaavaan  Riteish D, Sidharth M, Tara S  Jubin Nautiyal  Payal Dev Kunaal V.mp4#t=10" type="video/mp4">
+    <div class="form-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="./mixkit-bubbling-water-in-slow-motion-182.mp4#t=05" type="video/mp4" id="myVideoSRC">
         </video>
-        <div id="come">
-            <p>Available soon</p>
-        </div>
+
+        <form action="" id="form">
+            <h3>Sign up</h3>
+            <class class="container">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <input type="text" placeholder="username" required />
+                <div class="container">
+                    <span class="icon"><i class="fas fa-at"></i></span>
+                    <input type="email" placeholder="email" required />
+                </div>
+                <div class="container">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" placeholder="password" required />
+                </div>
+                <div class="container">
+                    <span class="icon"><i class="fas fa-mobile"></i></span>
+                    <input type="number" placeholder="phone" required />
+                </div>
+                <input type="submit" value="Sign up">
+        </form>
+
     </div>
-
-
-
-
-
     <div class="masterfooter">
         <footer id="ms-footer" class="foot-hover same-class">
             <nav class="same-class">
@@ -144,56 +226,59 @@
                 </div>
                 <div class="toplinks same-class">
                     <dl class="define">
-                        <dt class="define">Company</dt>
+                        <dt class="define"></dt>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">About</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
-                                class="footer-primary define">Jobs</a>
+                            <a href="http://" target="" rel="noopener noreferrer" class="footer-primary define">Jobs</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
-                                class="footer-primary define">For the Record</a>
+                            <a href="http://" target="" rel="noopener noreferrer" class="footer-primary define">For the
+                                Record</a>
                         </dd>
                     </dl>
                     <dl class="define">
                         <dt class="define">Communities</dt>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
-                                class="footer-primary define">For Artists</a>
+                            <a href="http://" target="" rel="noopener noreferrer" class="footer-primary define">For
+                                Artists</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Developers</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Advertising</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
+                                class="footer-primary define">Advertising</a>
+                        </dd>
+                        <dd class="define">
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Investors</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Vendors</a>
                         </dd>
                     </dl>
                     <dl class="define">
                         <dt class="define">Useful Links</dt>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Support</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
-                                class="footer-primary define">Web player</a>
+                            <a href="http://" target="" rel="noopener noreferrer" class="footer-primary define">Web
+                                player</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
-                                class="footer-primary define">Free Mobile App</a>
+                            <a href="http://" target="" rel="noopener noreferrer" class="footer-primary define">Free
+                                Mobile App</a>
                         </dd>
                     </dl>
 
@@ -270,75 +355,101 @@
 
     </div>
 
+    <script>
 
-</body>
-<script>
-    function changetheme() {
-        var theme = document.getElementById("theme");
-        if (theme.getAttribute('href') == "dark.css") {
-            theme.setAttribute("href", "light.css");
+        var form = document.getElementById('form');
+        form.addEventListener('mousemove', (e) => {
+
+            var x = (window.innerWidth / 2 - e.pageX) / 12;;
+            var y = (window.innerHeight / 2 - e.pageY) / 12;
+            form.style.transform = 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)';
+
+        });
+
+        form.addEventListener('mouseleave', function () {
+            form.style.transform = 'rotateX(0deg) rotateY(0deg)';
+
+        });
+
+    </script>
+    <script>
+        function changetheme() {
+            var theme = document.getElementById("theme");
+            var video = document.getElementById('myVideo');
+            var source = document.getElementById('myVideoSRC');
+            if (theme.getAttribute('href') == "light.css") {
+                theme.setAttribute("href", "dark.css");
+                source.setAttribute('src', './Abstract Black Bubbles.mp4');
+                video.load();
+                video.play();
+            }
+            else {
+
+                theme.setAttribute("href", "light.css");
+                source.setAttribute('src', './mixkit-bubbling-water-in-slow-motion-182.mp4');
+                video.load();
+                video.play();
+
+            }
+
         }
-        else {
-
-            theme.setAttribute("href", "dark.css");
-        }
-
-    }
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "447px";
-        document.getElementById("overlay").style.width = "100vw";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("overlay").style.width = "0";
-        document.body.style.backgroundColor = "black";
-    }
-    function crossed() {
-
-
-
-        var x = document.getElementById("cross").getAttribute("aria-expanded");
-        if (x == "true") {
-            document.getElementById("ham1").style.transform = "rotate(0deg)";
-            document.getElementById("ham2").style.opacity = 1;
-            document.getElementById("ham3").style.transform = "rotate(0deg)";
-
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("overlay").style.width = "0";
-            document.body.style.backgroundColor = "black";
-            x = "false"
-        } else {
-
-            document.getElementById("ham1").style.transform = "rotate(-45deg)";
-            document.getElementById("ham2").style.opacity = 0;
-            document.getElementById("ham3").style.transform = "rotate(45deg)";
-
+        function openNav() {
             document.getElementById("mySidenav").style.width = "447px";
             document.getElementById("overlay").style.width = "100vw";
             document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
-            x = "true"
-        }
-        document.getElementById("cross").setAttribute("aria-expanded", x);
-
-
-    }
-    function op() {
-        var y = document.getElementById("mySidenav").style.opacity;
-        if (y == 0) {
-            y = 1;
-            document.getElementById("mySidenav").style.opacity = y;
-
-        }
-        else {
-            y = 0;
-            document.getElementById("mySidenav").style.opacity = y;
         }
 
-    }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("overlay").style.width = "0";
+            document.body.style.backgroundColor = "black";
+        }
+        function crossed() {
 
 
-</script>
+
+            var x = document.getElementById("cross").getAttribute("aria-expanded");
+            if (x == "true") {
+                document.getElementById("ham1").style.transform = "rotate(0deg)";
+                document.getElementById("ham2").style.opacity = 1;
+                document.getElementById("ham3").style.transform = "rotate(0deg)";
+
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("overlay").style.width = "0";
+                document.body.style.backgroundColor = "black";
+                x = "false"
+            } else {
+
+                document.getElementById("ham1").style.transform = "rotate(-45deg)";
+                document.getElementById("ham2").style.opacity = 0;
+                document.getElementById("ham3").style.transform = "rotate(45deg)";
+
+                document.getElementById("mySidenav").style.width = "447px";
+                document.getElementById("overlay").style.width = "100vw";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
+                x = "true"
+            }
+            document.getElementById("cross").setAttribute("aria-expanded", x);
+
+
+        }
+        function op() {
+            var y = document.getElementById("mySidenav").style.opacity;
+            if (y == 0) {
+                y = 1;
+                document.getElementById("mySidenav").style.opacity = y;
+
+            }
+            else {
+                y = 0;
+                document.getElementById("mySidenav").style.opacity = y;
+            }
+
+        }
+
+
+    </script>
+
+</body>
 
 </html>
