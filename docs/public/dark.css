@@ -5,9 +5,10 @@
     color: azure;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 
 }
+
 
 body {
     background-color: black;
