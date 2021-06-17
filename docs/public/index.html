@@ -9,6 +9,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./light.css" id="theme">
     <link rel="icon" href="./logo.jpg" type="image/gif" sizes="18x18">
+    <script>
+        function changetheme() {
+            var theme = document.getElementById("theme");
+            if (theme.getAttribute('href') == "dark.css") {
+                theme.setAttribute("href", "light.css");
+            }
+            else {
+    
+                theme.setAttribute("href", "dark.css");
+            }
+    
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "447px";
+            document.getElementById("overlay").style.width = "100vw";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("overlay").style.width = "0";
+            document.body.style.backgroundColor = "black";
+        }
+        function crossed() {
+    
+    
+    
+            var x = document.getElementById("cross").getAttribute("aria-expanded");
+            if (x == "true") {
+                document.getElementById("ham1").style.transform = "rotate(0deg)";
+                document.getElementById("ham2").style.opacity = 1;
+                document.getElementById("ham3").style.transform = "rotate(0deg)";
+    
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("overlay").style.width = "0";
+                document.body.style.backgroundColor = "black";
+                x = "false"
+            } else {
+    
+                document.getElementById("ham1").style.transform = "rotate(-45deg)";
+                document.getElementById("ham2").style.opacity = 0;
+                document.getElementById("ham3").style.transform = "rotate(45deg)";
+    
+                document.getElementById("mySidenav").style.width = "447px";
+                document.getElementById("overlay").style.width = "100vw";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
+                x = "true"
+            }
+            document.getElementById("cross").setAttribute("aria-expanded", x);
+    
+    
+        }
+        function op() {
+            var y = document.getElementById("mySidenav").style.opacity;
+            if (y == 0) {
+                y = 1;
+                document.getElementById("mySidenav").style.opacity = y;
+    
+            }
+            else {
+                y = 0;
+                document.getElementById("mySidenav").style.opacity = y;
+            }
+    
+        }
+    
+    
+    </script>
     <!-- bootstrap -->
 
 
@@ -34,24 +102,27 @@
         #mySidenav {
             opacity: 0;
         }
+
         /* .menu-closed:hover{
             background-color: blueviolet;
 
         } */
 
-         .container{
+        .container {
             position: absolute;
-            top:50%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 350px;
             height: 350px;
         }
-        .container video{
+
+        .container video {
             width: 100%;
             height: 100%;
         }
-        .container .text{
+
+        .container .text {
             position: absolute;
             top: 0;
             left: 0;
@@ -66,7 +137,8 @@
             letter-spacing: 7px;
             font-weight: bolder;
         }
-        
+
+     
     </style>
 </head>
 
@@ -118,8 +190,9 @@
                     <li><a href="./support.html">Support</a></li>
                     <li><a href="./download.html">Download</a>
                     </li>
-                    <li role="separator" class="mh-header-primary svelte-1i2hclv"><li>
-                    <br><br>
+                    <li role="separator" class="mh-header-primary svelte-1i2hclv">
+                    <li>
+                        <br><br>
                     <li><a href="./signup.html" style="font-size:larger">Sign up</a></li>
                     <li><a href="./glasslogin.html" style="font-size:larger">Login</a></li>
                     <br><br><br><br>
@@ -392,73 +465,6 @@
     </div>
 
 </body>
-<script>
-    function changetheme() {
-        var theme = document.getElementById("theme");
-        if (theme.getAttribute('href') == "dark.css") {
-            theme.setAttribute("href", "light.css");
-        }
-        else {
 
-            theme.setAttribute("href", "dark.css");
-        }
-
-    }
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "447px";
-        document.getElementById("overlay").style.width = "100vw";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("overlay").style.width = "0";
-        document.body.style.backgroundColor = "black";
-    }
-    function crossed() {
-
-
-
-        var x = document.getElementById("cross").getAttribute("aria-expanded");
-        if (x == "true") {
-            document.getElementById("ham1").style.transform = "rotate(0deg)";
-            document.getElementById("ham2").style.opacity = 1;
-            document.getElementById("ham3").style.transform = "rotate(0deg)";
-
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("overlay").style.width = "0";
-            document.body.style.backgroundColor = "black";
-            x = "false"
-        } else {
-
-            document.getElementById("ham1").style.transform = "rotate(-45deg)";
-            document.getElementById("ham2").style.opacity = 0;
-            document.getElementById("ham3").style.transform = "rotate(45deg)";
-
-            document.getElementById("mySidenav").style.width = "447px";
-            document.getElementById("overlay").style.width = "100vw";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
-            x = "true"
-        }
-        document.getElementById("cross").setAttribute("aria-expanded", x);
-
-
-    }
-    function op() {
-        var y = document.getElementById("mySidenav").style.opacity;
-        if (y == 0) {
-            y = 1;
-            document.getElementById("mySidenav").style.opacity = y;
-
-        }
-        else {
-            y = 0;
-            document.getElementById("mySidenav").style.opacity = y;
-        }
-
-    }
-
-
-</script>
 
 </html>
