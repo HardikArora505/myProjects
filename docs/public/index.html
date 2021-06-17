@@ -16,71 +16,71 @@
                 theme.setAttribute("href", "light.css");
             }
             else {
-    
+
                 theme.setAttribute("href", "dark.css");
             }
-    
+
         }
         function openNav() {
             document.getElementById("mySidenav").style.width = "447px";
             document.getElementById("overlay").style.width = "100vw";
             document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
         }
-    
+
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("overlay").style.width = "0";
             document.body.style.backgroundColor = "black";
         }
         function crossed() {
-    
-    
-    
+
+
+
             var x = document.getElementById("cross").getAttribute("aria-expanded");
             if (x == "true") {
                 document.getElementById("ham1").style.transform = "rotate(0deg)";
                 document.getElementById("ham2").style.opacity = 1;
                 document.getElementById("ham3").style.transform = "rotate(0deg)";
-    
+
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("overlay").style.width = "0";
                 document.body.style.backgroundColor = "black";
                 x = "false"
             } else {
-    
+
                 document.getElementById("ham1").style.transform = "rotate(-45deg)";
                 document.getElementById("ham2").style.opacity = 0;
                 document.getElementById("ham3").style.transform = "rotate(45deg)";
-    
+
                 document.getElementById("mySidenav").style.width = "447px";
                 document.getElementById("overlay").style.width = "100vw";
                 document.body.style.backgroundColor = "rgba(0,0,0,0.75)";
                 x = "true"
             }
             document.getElementById("cross").setAttribute("aria-expanded", x);
-    
-    
+
+
         }
         function op() {
             var y = document.getElementById("mySidenav").style.opacity;
             if (y == 0) {
                 y = 1;
                 document.getElementById("mySidenav").style.opacity = y;
-    
+
             }
             else {
                 y = 0;
                 document.getElementById("mySidenav").style.opacity = y;
             }
-    
+
         }
-    
-    
+        
+        
     </script>
     <!-- bootstrap -->
-
-
-
+    
+    
+    
     <title>Document</title>
     <style>
         /* @media(max-width:1023px) and (min-width:1024px) and (max-height:1365px) and (min-height:1366px) {
@@ -89,6 +89,12 @@
                 width: 27vh;
             }
         } */
+
+
+        #cross:focus {
+            outline: none;
+            box-shadow: none;
+        }
 
         header {
             width: 100%;
@@ -138,7 +144,6 @@
             letter-spacing: 7px;
             font-weight: bolder;
         }
-     
     </style>
 </head>
 
