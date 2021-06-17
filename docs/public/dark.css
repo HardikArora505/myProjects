@@ -9,6 +9,11 @@
 
 }
 
+#cross:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 body {
     background-color: black;
