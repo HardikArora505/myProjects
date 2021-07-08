@@ -123,6 +123,15 @@
             min-width: 100%;
             min-height: 100%;
         }
+        @media(max-width:760px) {
+           .no_web_player{
+               display:none;
+           }
+           #noweb>a{
+               display: none;
+           }
+          
+        }
     </style>
     <title>Document</title>
 </head>
@@ -143,6 +152,8 @@
             <div class="item2">
 
                 <ul class="nalla">
+                    <li><a href="https://lynx-6080f.web.app/" target="_blank" rel="noopener noreferrer" class="no_web_player">Web Player</a></li>
+
                     <li><a href="./index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
                     <li><a href="./premium.html" target="_blank" rel="noopener noreferrer">Premium</a></li>
                     <li><a href="./support.html" target="_blank" rel="noopener noreferrer">Support</a></li>
@@ -173,6 +184,8 @@
                 <li><a href="./support.html">Support</a></li>
                 <li><a href="./download.html">Download</a>
                 </li>
+                <li class="no_web_player"><a href="https://lynx-6080f.web.app/" target="_blank" rel="noopener noreferrer" >Web Player</a></li>
+
                 <li role="separator" class="mh-header-primary svelte-1i2hclv"></li>
                 <br><br>
                 <li><a href="./signup.html" style="font-size:larger">Sign up</a></li>
@@ -265,7 +278,7 @@
                             <a href="http://" target="_blank" rel="noopener noreferrer"
                                 class="footer-primary define">Support</a>
                         </dd>
-                        <dd class="define">
+                        <dd class="define" id="noweb">
                             <a href="http://" target="_blank" rel="noopener noreferrer"
                                 class="footer-primary define">Web player</a>
                         </dd>
