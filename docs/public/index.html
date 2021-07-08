@@ -140,6 +140,18 @@
             letter-spacing: 7px;
             font-weight: bolder;
         }
+        @media(max-width:760px) {
+           .no_web_player{
+               display:none;
+           }
+           .no_web{
+               display: none;
+            }
+            #noweb > a{
+                
+                display: none;
+           }
+        }
     </style>
 </head>
 
@@ -163,12 +175,13 @@
                 <div class="item2">
 
                     <ul class="nalla">
-                        <li><a href="./premium.html" target="_blank" rel="noopener noreferrer">Premium</a></li>
-                        <li><a href="./support.html" target="_blank" rel="noopener noreferrer">Support</a></li>
-                        <li><a href="./download.html" target="_blank" rel="noopener noreferrer">Download</a></li>
-                        <li id="i1"><a href="./signup.html" target="_blank" rel="noopener noreferrer">Sign up</a></li>
+                        <li><a href="https://lynx-6080f.web.app/" target="_blank" rel="noopener noreferrer" class="no_web_player">Web Player</a></li>
+                        <li><a href="./premium.html" target="" rel="noopener noreferrer">Premium</a></li>
+                        <li><a href="./support.html" target="" rel="noopener noreferrer">Support</a></li>
+                        <li><a href="./download.html" target="" rel="noopener noreferrer">Download</a></li>
+                        <li id="i1"><a href="./signup.html" target="" rel="noopener noreferrer">Sign up</a></li>
                         <li id="i2">|</li>
-                        <li id="i3"><a href="./glasslogin.html" target="_blank" rel="noopener noreferrer">Login</a></li>
+                        <li id="i3"><a href="./glasslogin.html" target="" rel="noopener noreferrer">Login</a></li>
 
                     </ul>
                 </div>
@@ -189,8 +202,9 @@
                 <ul class="ulmain">
                     <li><a href="./premium.html">Premium</a></li>
                     <li><a href="./support.html">Support</a></li>
-                    <li><a href="./download.html">Download</a>
-                    </li>
+                    <li><a href="./download.html">Download</a> </li>
+                    <li class="no_web"><a href="https://lynx-6080f.web.app/" target="_blank" rel="noopener noreferrer" >Web Player</a></li>
+
                     <li role="separator" class="mh-header-primary svelte-1i2hclv">
                     <li>
                         <br><br>
@@ -325,7 +339,7 @@
         <div id="ready">
             <h1>Ready? Let's play</h1>
             <div class="play">
-                <a href="http://" target="_blank"><button>GET LYNX FREE</button></a>
+                <a href="http://" target=""><button>GET LYNX FREE</button></a>
             </div>
         </div>
     </section>
@@ -341,53 +355,53 @@
                     <dl class="define">
                         <dt class="define">Company</dt>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">About</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Jobs</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">For the Record</a>
                         </dd>
                     </dl>
                     <dl class="define">
                         <dt class="define">Communities</dt>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">For Artists</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Developers</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Advertising</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Investors</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Vendors</a>
                         </dd>
                     </dl>
                     <dl class="define">
                         <dt class="define">Useful Links</dt>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Support</a>
                         </dd>
-                        <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
-                                class="footer-primary define">Web player</a>
+                        <dd class="define" id="noweb" >
+                            <a href="https://lynx-6080f.web.app/" target="_blank" rel="noopener noreferrer"
+                                class="footer-primary define" >Web player</a>
                         </dd>
                         <dd class="define">
-                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                            <a href="http://" target="" rel="noopener noreferrer"
                                 class="footer-primary define">Free Mobile App</a>
                         </dd>
                     </dl>
