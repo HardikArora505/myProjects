@@ -380,16 +380,16 @@
             var theme = document.getElementById("theme");
             var video = document.getElementById('myVideo');
             var source = document.getElementById('myVideoSRC');
-            if (theme.getAttribute('href') == "light.css") {
-                theme.setAttribute("href", "dark.css");
-                source.setAttribute('src', './Abstract Black Bubbles.mp4');
+            if (theme.getAttribute('href') == "dark.css") {
+                theme.setAttribute("href", "light.css");
+                source.setAttribute('src', './Abstract Background video No Copyright video.mp4');
                 video.load();
                 video.play();
             }
             else {
 
-                theme.setAttribute("href", "light.css");
-                source.setAttribute('src', './Abstract Background video No Copyright video.mp4');
+                theme.setAttribute("href", "dark.css");
+                source.setAttribute('src', './Abstract Black Bubbles.mp4');
                 video.load();
                 video.play();
 
